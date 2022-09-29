@@ -1,0 +1,14 @@
+---
+apiVersion: pkg.crossplane.io/v1alpha1
+kind: ControllerConfig
+metadata:
+  name: gcp-provider
+spec:
+  serviceAccountName: gcp-provider
+---
+apiVersion: pkg.crossplane.io/v1alpha1
+kind: ControllerConfig
+metadata:
+  name: kubernetes-provider
+spec:
+  serviceAccountName: kubernetes-provider

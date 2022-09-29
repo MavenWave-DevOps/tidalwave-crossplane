@@ -8,3 +8,11 @@ helmCharts:
   releaseName: crossplane
   version: v1.9.1
   repo: https://charts.crossplane.io/stable
+
+resources:
+- service-accounts.yaml
+- rbac.yaml
+- configurations.yaml
+- controller-configs.yaml
+- providers.yaml
+- provider-configs.yaml

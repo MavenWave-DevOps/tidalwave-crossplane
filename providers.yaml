@@ -1,0 +1,27 @@
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: gcp-provider
+spec:
+  package: crossplane/provider-gcp:v0.21.0
+  controllerConfigRef:
+    name: gcp-provider
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: kubernetes-provider
+spec:
+  package: us.gcr.io/bradw-nextgen-devops/provider-kubernetes-amd64:v0.5.0-rc.10.gb13a762
+  controllerConfigRef:
+    name: kubernetes-provider
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: helm-provider
+spec:
+  package: us.gcr.io/bradw-nextgen-devops/provider-helm-amd64:v0.11.0-rc.18.g7434e43
+  controllerConfigRef:
+    name: kubernetes-provider
