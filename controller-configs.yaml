@@ -3,8 +3,6 @@ apiVersion: pkg.crossplane.io/v1alpha1
 kind: ControllerConfig
 metadata:
   name: gcp-provider
-  annotations:
-    argocd.argoproj.io/sync-wave: "5"
 spec:
   serviceAccountName: gcp-provider
 ---
@@ -12,7 +10,5 @@ apiVersion: pkg.crossplane.io/v1alpha1
 kind: ControllerConfig
 metadata:
   name: kubernetes-provider
-  annotations:
-    argocd.argoproj.io/sync-wave: "5"
 spec:
   serviceAccountName: kubernetes-provider
