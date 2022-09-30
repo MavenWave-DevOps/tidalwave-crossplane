@@ -13,6 +13,6 @@ resources:
 - service-accounts.yaml
 - rbac.yaml
 - controller-configs.yaml
-# - providers.yaml
+- providers.yaml
 # - provider-configs.yaml
 # - configurations.yaml
