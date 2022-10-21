@@ -10,7 +10,6 @@ helmCharts:
   repo: https://charts.crossplane.io/stable
 
 resources:
-- github.com/crossplane/crossplane/cluster?ref=v1.9.1
 - service-accounts.yaml
 - rbac.yaml
 - controller-configs.yaml
